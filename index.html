@@ -65,7 +65,16 @@
       <section class="main section">
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-button" data-modal-close><svg class="icon-modal" width="11" height="11"">
+                        <use
+                          xlink:href="./images/icons.svg#icon-modal"
+                        ></use></svg>
+                      </button>
+          </div>
         </div>
       </section>
       <!-- Особливості секція -->
@@ -205,8 +214,8 @@
                       ><svg class="soc-team" width="20" height="20"">
                         <use
                           xlink:href="./images/icons.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use></svg>
+                      </a>
                   </li>
                 </ul>
               </div>
@@ -470,5 +479,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
